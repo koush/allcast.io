@@ -1,0 +1,23 @@
+/*
+	Prologue by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+	}
+	
+		#main > section
+		{
+			padding: 3em 0;
+		}
+
+		#main section.cover
+		{
+			padding: 5em 0;
+		}
