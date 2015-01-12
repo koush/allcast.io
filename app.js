@@ -7,6 +7,11 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+
+app.get('/troubleshooting/ios', function(req, res) {
+  res.redirect('https://github.com/koush/support-wiki/wiki/AllCast-Wiki');
+})
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
