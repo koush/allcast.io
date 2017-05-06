@@ -1,7 +1,7 @@
 @import 'vars';
 @import 'mixins';
 @import 'font-awesome.min.css';
-@import url('http://fonts.googleapis.com/css?family=Lato:300,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
 
 /*
 	Drift by Pixelarity
@@ -33,7 +33,7 @@
 		color: $color-accent-bg;
 		text-decoration: none;
 		border-bottom: dotted 1px;
-		
+
 		&:hover {
 			text-decoration: none;
 			color: $color-accent-bg !important;
@@ -45,7 +45,7 @@
 		color: $color-fg-bold;
 		font-weight: $font-weight-bold;
 	}
-	
+
 	em, i {
 		font-style: italic;
 	}
@@ -60,7 +60,7 @@
 		line-height: 1em;
 		margin: 0 0 ($size-element-margin * 0.5) 0;
 		letter-spacing: -0.01em;
-		
+
 		a {
 			color: inherit;
 			text-decoration: none;
@@ -81,12 +81,12 @@
 		font-size: 1.1em;
 		line-height: 1.5em;
 	}
-	
+
 	h5 {
 		font-size: 0.9em;
 		line-height: 1.5em;
 	}
-	
+
 	h6 {
 		font-size: 0.7em;
 		line-height: 1.5em;
@@ -97,32 +97,32 @@
 		position: relative;
 		top: 0.5em;
 	}
-	
+
 	sup {
 		font-size: 0.8em;
 		position: relative;
 		top: -0.5em;
 	}
-	
+
 	hr {
 		border: 0;
 		border-bottom: solid $size-border-width $color-border;
 
 		// This is the *only* instance where we need to rely on margin collapse.
 		margin: $size-element-margin 0;
-		
+
 		&.major {
 			margin: ($size-element-margin * 1.5) 0;
 		}
 	}
-	
+
 	blockquote {
 		border-left: solid ($size-border-width * 4) $color-border;
 		font-style: italic;
 		margin: 0 0 $size-element-margin 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
-	
+
 	code {
 		background: $color-border-bg;
 		border-radius: $size-border-radius;
@@ -150,11 +150,11 @@
 	.align-left {
 		text-align: left;
 	}
-	
+
 	.align-center {
 		text-align: center;
 	}
-	
+
 	.align-right {
 		text-align: right;
 	}
@@ -173,19 +173,19 @@
 			position: relative;
 			margin: 0 0 ($size-element-margin * 0.75) 0;
 		}
-		
+
 		h2 + p {
 			font-size: 1.25em;
 			margin-top: -1em;
 			line-height: 1.75em;
 		}
-		
+
 		h3 + p {
 			font-size: 1.1em;
 			margin-top: -0.85em;
 			line-height: 1.5em;
 		}
-		
+
 		h4 + p,
 		h5 + p,
 		h6 + p {
@@ -193,10 +193,10 @@
 			margin-top: -0.75em;
 			line-height: 1.5em;
 		}
-		
+
 		&.major {
 			text-align: center;
-			
+
 			h2 {
 				font-size: 2.35em;
 			}
@@ -206,7 +206,7 @@
 			}
 		}
 	}
-	
+
 /* Form */
 
 	form {
@@ -241,7 +241,7 @@
 		&:invalid {
 			box-shadow: none;
 		}
-		
+
 		&:focus {
 			border-color: $color-accent-bg;
 			box-shadow: 0 0 0 $size-border-width $color-accent-bg;
@@ -252,7 +252,7 @@
 		@include icon;
 		display: block;
 		position: relative;
-		
+
 		&:before {
 			content: '\f078';
 			color: $color-border;
@@ -278,7 +278,7 @@
 	select {
 		height: $size-element-height;
 	}
-	
+
 	textarea {
 		padding: 0.75em 1em;
 	}
@@ -292,7 +292,7 @@
 		opacity: 0;
 		width: 1em;
 		z-index: -1;
-		
+
 		& + label {
 			@include icon;
 			color: $color-fg;
@@ -303,7 +303,7 @@
 			padding-left: ($size-element-height * 0.6) + 0.75em;
 			padding-right: 0.75em;
 			position: relative;
-			
+
 			&:before {
 				background: $color-border-bg;
 				border-radius: $size-border-radius;
@@ -319,7 +319,7 @@
 				width: ($size-element-height * 0.6);
 			}
 		}
-		
+
 		&:checked + label {
 			&:before {
 				background: $color-accent2-bg;
@@ -331,7 +331,7 @@
 
 		&:focus + label {
 			&:before {
-				border-color: $color-accent-bg;				
+				border-color: $color-accent-bg;
 				box-shadow: 0 0 0 $size-border-width $color-accent-bg;
 			}
 		}
@@ -368,12 +368,12 @@
 		opacity: 1.0;
 	}
 
-	:-ms-input-placeholder {  
+	:-ms-input-placeholder {
 		color: $color-fg-light !important;
 		opacity: 1.0;
 	}
 
-	.formerize-placeholder {  
+	.formerize-placeholder {
 		color: $color-fg-light !important;
 		opacity: 1.0;
 	}
@@ -385,7 +385,7 @@
 		border: solid $size-border-width $color-border;
 		margin-bottom: $size-element-margin;
 		padding: $size-element-margin;
-		
+
 		> :last-child,
 		> :last-child > :last-child,
 		> :last-child > :last-child > :last-child {
@@ -402,14 +402,14 @@
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
-			
+
 			.image {
 				&:first-child {
 					border-bottom-left-radius: 0;
 					border-bottom-right-radius: 0;
 					margin: ($size-element-margin * -1) 0 $size-element-margin ($size-element-margin * -1);
 					width: calc(100% + #{$size-element-margin * 2});
-					
+
 					img {
 						border-bottom-left-radius: 0;
 						border-bottom-right-radius: 0;
@@ -418,7 +418,7 @@
 			}
 		}
 	}
-	
+
 /* Icon */
 
 	.icon {
@@ -438,19 +438,19 @@
 		border: 0;
 		display: inline-block;
 		position: relative;
-		
+
 		img {
 			position: relative;
 			border-radius: $size-border-radius;
 			display: block;
 		}
-		
+
 		&.left {
 			float: left;
 			padding: 0 1.5em 1em 0;
 			top: 0.25em;
 		}
-		
+
 		&.right {
 			float: right;
 			padding: 0 0 1em 1.5em;
@@ -460,17 +460,17 @@
 		&.left,
 		&.right {
 			max-width: 40%;
-			
+
 			img {
 				width: 100%;
 			}
 		}
-		
+
 		&.fit {
 			display: block;
 			margin: 0 0 $size-element-margin 0;
 			width: 100%;
-			
+
 			img {
 				display: block;
 				width: 100%;
@@ -498,35 +498,35 @@
 		li {
 			padding-left: 0.5em;
 		}
-		
+
 		&.alt {
 			list-style: none;
 			padding-left: 0;
-			
+
 			li {
 				border-top: solid $size-border-width $color-border;
 				padding: 0.5em 0;
-				
+
 				&:first-child {
 					border-top: 0;
 					padding-top: 0;
 				}
 			}
 		}
-		
+
 		&.icons {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			
+
 			li {
 				display: inline-block;
 				padding: 0 1.25em 0 0;
-				
+
 				&:last-child {
 					padding-right: 0 !important;
 				}
-				
+
 				.icon {
 					border-radius: $size-border-radius;
 					border: solid $size-border-width $color-border;
@@ -538,47 +538,47 @@
 					text-align: center;
 					width: 2.75em;
 				}
-				
+
 				a.icon {
 					@include vendor-property('transition', 'background-color #{$duration-transition} ease-in-out, color #{$duration-transition} ease-in-out');
-					
+
 					&:hover {
 						background-color: $color-border-bg;
 					}
-					
+
 					&:active {
 						background-color: $color-border2-bg;
 					}
 				}
 			}
 		}
-		
+
 		&.actions {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			
+
 			li {
 				display: inline-block;
 				padding: 0 ($size-element-margin * 0.5) 0 0;
 				vertical-align: middle;
-			
+
 				&:last-child {
 					padding-right: 0;
 				}
 			}
-			
+
 			&.small {
 				li {
 					padding: 0 ($size-element-margin * 0.25) 0 0;
 				}
 			}
-			
+
 			&.vertical {
 				li {
 					display: block;
 					padding: ($size-element-margin * 0.5) 0 0 0;
-					
+
 					&:first-child {
 						padding-top: 0;
 					}
@@ -587,7 +587,7 @@
 						margin-bottom: 0;
 					}
 				}
-				
+
 				&.small {
 					li {
 						padding: ($size-element-margin * 0.25) 0 0 0;
@@ -598,23 +598,23 @@
 					}
 				}
 			}
-			
+
 			&.fit {
 				display: table;
 				margin-left: ($size-element-margin * -0.5);
 				padding: 0;
 				table-layout: fixed;
 				width: calc(100% + #{($size-element-margin * 0.5)});
-				
+
 				li {
 					display: table-cell;
 					padding: 0 0 0 ($size-element-margin * 0.5);
-					
+
 					> * {
 						margin-bottom: 0;
 					}
 				}
-				
+
 				&.small {
 					margin-left: ($size-element-margin * -0.25);
 					width: calc(100% + #{($size-element-margin * 0.25)});
@@ -630,13 +630,13 @@
 			line-height: 1em;
 			list-style: none;
 			padding: 0;
-			
+
 			li {
 				border-left: solid 1px $color-border;
 				display: inline-block;
 				margin-left: 1em;
 				padding-left: 1em;
-				
+
 				&:first-child {
 					border-left: 0;
 					margin-left: 0;
@@ -645,7 +645,7 @@
 			}
 		}
 	}
-	
+
 	dl {
 		margin: 0 0 $size-element-margin 0;
 	}
@@ -660,23 +660,23 @@
 	table {
 		margin: 0 0 $size-element-margin 0;
 		width: 100%;
-    		
+
 		tbody {
 			tr {
 				border: solid $size-border-width $color-border;
 				border-left: 0;
 				border-right: 0;
-				
+
 				&:nth-child(2n + 1) {
 					background-color: $color-border-bg;
 				}
 			}
 		}
-		
+
 		td {
 			padding: 0.75em 0.75em;
 		}
-		
+
 		th {
 			color: $color-fg-bold;
 			font-size: 0.9em;
@@ -684,30 +684,30 @@
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
-	
+
 		thead {
 			border-bottom: solid ($size-border-width * 2) $color-border;
 		}
-		
+
 		tfoot {
 			border-top: solid ($size-border-width * 2) $color-border;
 		}
 
 		&.alt {
 			border-collapse: separate;
-			
+
 			tbody {
 				tr {
 					td {
 						border: solid $size-border-width $color-border;
 						border-left-width: 0;
 						border-top-width: 0;
-						
+
 						&:first-child {
 							border-left-width: $size-border-width;
 						}
 					}
-					
+
 					&:first-child {
 						td {
 							border-top-width: $size-border-width;
@@ -715,17 +715,17 @@
 					}
 				}
 			}
-			
+
 			thead {
 				border-bottom: 0;
 			}
-			
+
 			tfoot {
 				border-top: 0;
 			}
 		}
 	}
-		
+
 /* Button */
 
 	input[type="submit"],
@@ -757,14 +757,14 @@
 			background-color: $color-border-bg;
 			color: $color-fg-bold !important;
 		}
-		
+
 		&:active {
 			background-color: $color-border2-bg;
 		}
 
 		&.icon {
 			padding-left: 1.35em;
-			
+
 			&:before {
 				margin-right: 0.5em;
 			}
@@ -775,11 +775,11 @@
 			margin: 0 0 ($size-element-margin * 0.5) 0;
 			width: 100%;
 		}
-		
+
 		&.small {
 			font-size: 0.8em;
 		}
-		
+
 		&.big {
 			font-size: 1em;
 			height: 3.5em;
@@ -790,16 +790,16 @@
 		&.special {
 			background-color: $color-accent-bg;
 			color: $color-accent-fg-bold !important;
-			
+
 			&:hover {
 				background-color: lighten($color-accent-bg, 5);
 			}
-			
+
 			&:active {
 				background-color: darken($color-accent-bg, 5);
 			}
 		}
-		
+
 		&.disabled,
 		&:disabled {
 			background-color: $color-fg !important;
@@ -809,7 +809,7 @@
 			opacity: 0.25;
 		}
 	}
-	
+
 /* Feature */
 
 	.feature {
@@ -817,7 +817,7 @@
 		padding-left: 6.5em;
 		position: relative;
 		text-align: left;
-		
+
 		&:before {
 			border-radius: $size-border-radius;
 			border: solid $size-border-width $color-border;
@@ -832,12 +832,12 @@
 			top: 0;
 			width: 2em;
 		}
-		
+
 		h3 {
 			margin: 0 0 ($size-element-margin * 0.35) 0;
 		}
 	}
-	
+
 /* Slider */
 
 	.slider {
@@ -852,7 +852,7 @@
 			overflow: hidden;
 			width: 80%;
 		}
-		
+
 		.slide {
 			img {
 				border-radius: $size-border-radius * 0.75;
@@ -860,7 +860,7 @@
 				width: 100%;
 			}
 		}
-		
+
 		.nav-next,
 		.nav-previous {
 			@include icon;
@@ -877,21 +877,21 @@
 			text-align: center;
 			top: 50%;
 			width: 1.25em;
-			
+
 			&:before {
 				position: relative;
 			}
 		}
-		
+
 		.nav-next {
 			right: 0;
-			
+
 			&:before {
 				content: '\f105';
 				right: -0.05em;
 			}
 		}
-		
+
 		.nav-previous {
 			left: 0;
 
@@ -906,20 +906,20 @@
 
 	.wrapper {
 		padding: 5em 0 3em 0;
-		
+
 		&.style1 {
 			background: #f2f2f2;
-			
+
 			.box {
 				background: #ffffff;
 				border: 0;
 			}
 		}
-		
+
 		&.style2 {
 			background: #ffffff;
 		}
-		
+
 		&.style3 {
 			background: $color-accent-bg;
 			color: $color-accent-fg;
@@ -937,7 +937,7 @@
 			.button {
 				border-color: $color-accent-border !important;
 				color: $color-accent-fg-bold !important;
-				
+
 				&:hover {
 					background-color: $color-accent-border-bg;
 				}
@@ -948,7 +948,7 @@
 			}
 		}
 	}
-	
+
 /* Header */
 
 	#skel-layers-wrapper {
@@ -982,14 +982,14 @@
 		&.reveal {
 			@include vendor-property('animation', 'reveal-header 0.5s');
 		}
-		
+
 		&.alt {
 			@include vendor-property('animation', 'none');
 			background-color: transparent;
 			box-shadow: none;
 			color: #fff;
 		}
-		
+
 		h1 {
 			color: inherit;
 			font-size: 1em;
@@ -1000,16 +1000,16 @@
 			padding: 0;
 			position: absolute;
 			top: 0;
-			
+
 			span {
 				font-weight: $font-weight;
 			}
-			
+
 			a {
 				border: 0;
 			}
 		}
-		
+
 		nav {
 			height: inherit;
 			line-height: inherit;
@@ -1022,26 +1022,26 @@
 				list-style: none;
 				margin: 0;
 				padding-left: 0;
-				
+
 				> li {
 					border-radius: $size-border-radius;
 					display: inline-block;
 					margin-left: 2em;
 					padding-left: 0;
-					
+
 					a {
 						border: 0;
 						color: inherit;
 						display: inline-block;
 						text-decoration: none;
-						
+
 						&.icon {
 							&:before {
 								margin-right: 0.5em;
 							}
 						}
 					}
-					
+
 					&:first-child {
 						margin-left: 0;
 					}
@@ -1055,7 +1055,7 @@
 						top: -0.075em;
 						vertical-align: middle;
 					}
-					
+
 					> ul {
 						display: none;
 					}
@@ -1065,17 +1065,17 @@
 
 		.container {
 			position: relative;
-			
+
 			h1 {
 				left: 0;
 			}
-			
+
 			nav {
 				right: 0;
 			}
 		}
 	}
-	
+
 	.dropotron {
 		background: #fff;
 		border-radius: $size-border-radius;
@@ -1112,7 +1112,7 @@
 				}
 			}
 		}
-		
+
 		&.level-0 {
 			font-size: 0.9em;
 			margin-top: 1em;
@@ -1136,7 +1136,7 @@
 			}
 		}
 	}
-	
+
 /* Banner */
 
 	#banner {
@@ -1167,11 +1167,11 @@
 		:last-child {
 			margin-bottom: 0;
 		}
-		
+
 		h1, h2, h3, h4, h5, h6 {
 			color: $color-accent2-fg-bold;
 		}
-		
+
 		.inner {
 			position: relative;
 			z-index: 2;
@@ -1180,7 +1180,7 @@
 		.button {
 			border-color: $color-accent2-border !important;
 			color: $color-accent2-fg-bold !important;
-			
+
 			&:hover {
 				background-color: $color-accent2-border-bg;
 			}
@@ -1189,14 +1189,14 @@
 				background-color: $color-accent2-border2-bg;
 			}
 		}
-		
+
 		h2 {
 			font-size: 3.25em;
 			line-height: 1.25em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
 		}
-		
+
 		p {
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
@@ -1210,19 +1210,19 @@
 			}
 		}
 	}
-	
+
 /* One */
 
 	#one {
 		padding-bottom: 0;
-		
+
 		.slider {
 			.viewer {
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
 				border-bottom: 0;
 			}
-			
+
 			.slide {
 				img {
 					border-bottom-left-radius: 0;
@@ -1241,7 +1241,7 @@
 			border-radius: $size-border-radius;
 			margin-bottom: $size-element-margin;
 			padding: ($size-element-margin * 1.5);
-			
+
 			> :last-child,
 			> :last-child > :last-child,
 			> :last-child > :last-child > :last-child {
@@ -1256,13 +1256,13 @@
 		padding: 4em 0;
 		text-align: center;
 		vertical-align: middle;
-		
+
 		h2 {
 			display: inline-block;
 			margin: 0 1em 0 0;
 			vertical-align: middle;
 		}
-		
+
 		.actions {
 			display: inline-block;
 			margin: 0;
@@ -1279,13 +1279,13 @@
 		.icons {
 			margin: 0 0 ($size-element-margin * 2) 0;
 		}
-		
+
 		.menu {
 			a {
 				color: inherit;
 			}
 		}
-		
+
 		.copyright {
 			font-size: 0.8em;
 		}
